@@ -1,0 +1,12 @@
+Source: ros-rolling-hri-rviz
+Section: misc
+Priority: optional
+Maintainer: Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-auto, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-cv-bridge, ros-rolling-hri, ros-rolling-hri-msgs, ros-rolling-rclcpp, ros-rolling-rcpputils, ros-rolling-rviz-common, ros-rolling-rviz-default-plugins, ros-rolling-rviz-ogre-vendor, ros-rolling-sensor-msgs, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-hri-rviz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-cv-bridge, ros-rolling-hri, ros-rolling-hri-msgs, ros-rolling-rclcpp, ros-rolling-rcpputils, ros-rolling-rviz-common, ros-rolling-rviz-default-plugins, ros-rolling-rviz-ogre-vendor, ros-rolling-sensor-msgs, ros-rolling-ros-workspace
+Description: Set of rviz plugins for ROS4HRI data visualization
