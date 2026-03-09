@@ -1,3 +1,26 @@
+## hri_rviz (rolling) - 2.3.0-1
+
+The packages in the `hri_rviz` repository were released into the `rolling` distro by running `/home/severin/.local/bin/bloom-release --new-track --rosdistro rolling --track rolling hri_rviz` on `Mon, 09 Mar 2026 10:53:09 -0000`
+
+The `hri_rviz` package was released.
+
+Version of package(s) in repository `hri_rviz`:
+
+- upstream repository: https://github.com/ros4hri/hri_rviz.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `2.3.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## hri_rviz (humble) - 2.1.0-1
 
 The packages in the `hri_rviz` repository were released into the `humble` distro by running `/usr/bin/bloom-release hri_rviz -r humble` on `Thu, 19 Sep 2024 09:32:43 -0000`
