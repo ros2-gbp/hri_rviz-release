@@ -1,0 +1,145 @@
+ros-rolling-hri-rviz (2.3.0-2resolute) resolute; urgency=high
+
+  * compat jazzy
+  * Contributors: Séverin Lemaignan
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Tue, 03 Feb 2026 06:00:00 -0000
+
+ros-rolling-hri-rviz (2.2.0-2resolute) resolute; urgency=high
+
+  * ament_auto_package now requires USE_SCOPED_HEADER_INSTALL_DIR
+  * Contributors: Séverin Lemaignan
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Wed, 10 Sep 2025 05:00:00 -0000
+
+ros-rolling-hri-rviz (2.1.0-2resolute) resolute; urgency=high
+
+  * display expression when available
+  * Contributors: saracooper
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Thu, 19 Sep 2024 05:00:00 -0000
+
+ros-rolling-hri-rviz (2.0.0-2resolute) resolute; urgency=high
+
+  * re-import CHANGELOG from ROS1
+  * general cleanup
+    linting code + fixing wrong dependencies in package.xml
+  * reading body description from the new dedicated topic
+  * add LICENSE and CONTRIBUTING.md
+  * using rviz-ogre-vendor instead of native ogre libraries
+    see https://github.com/ros2/rviz/issues/876
+  * documentation
+  * fixed icons
+  * added copyright
+  * TF (HRI) porting
+  * Skeletons3D porting
+  * Humans porting
+  * Contributors: Séverin Lemaignan, lorenzoferrini
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Tue, 21 May 2024 05:00:00 -0000
+
+ros-rolling-hri-rviz (0.4.2-2resolute) resolute; urgency=high
+
+  * moving from non-normalized to normalized facial landmarks
+  * Contributors: lorenzoferrini
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Wed, 18 Oct 2023 05:00:00 -0000
+
+ros-rolling-hri-rviz (0.4.1-2resolute) resolute; urgency=high
+
+  * changed RoI type to normalized one
+  * Contributors: Luka Juricic
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Wed, 05 Jul 2023 05:00:00 -0000
+
+ros-rolling-hri-rviz (0.4.0-2resolute) resolute; urgency=high
+
+  * Merge branch 'skeletons' into 'main'
+    skeleton extension for Humans plugin
+    See merge request ros4hri/hri_rviz!5
+  * joint visualization as circles
+  * Optimized iteration over bodies for skeleton representation
+  * Introducing skeleton visualization
+    It is now possible to visualize 2D skeletons using the humans
+    rviz plugin.
+  * add LICENSE
+  * Contributors: Séverin Lemaignan, lorenzoferrini
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Wed, 18 Jan 2023 06:00:00 -0000
+
+ros-rolling-hri-rviz (0.3.1-2resolute) resolute; urgency=high
+
+  * set license to BSD
+  * Contributors: Séverin Lemaignan
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Tue, 12 Jul 2022 05:00:00 -0000
+
+ros-rolling-hri-rviz (0.3.0-2resolute) resolute; urgency=high
+
+  * Added PAL Robotics copyright
+  * Refactored skeleton frames testing
+    The new version takes a frame name, verifies if it has more than
+    the minimum number of characters for a skeleton frame, checks
+    if the name without the last 5 characters belongs to the skeleton
+    ROS4HRI naming convention and if it belongs to a currently tracked
+    body.
+  * bodies -> skeletons
+    Bodies frames are now referenced as skeleton frame, for clarity.
+  * Redefined class name for the plugin
+    To avoid confusion with the already existing TF plugin, the
+    plugin will now be visualized as TF (HRI) in rviz
+  * First complete hri_tf version
+  * Fixed skeletons appearing when plugin was disabled
+  * Contributors: Séverin Lemaignan, lorenzoferrini
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Tue, 12 Jul 2022 05:00:00 -0000
+
+ros-rolling-hri-rviz (0.2.0-2resolute) resolute; urgency=high
+
+  * Facial landmarks visualization
+  * raw pointers to std::share_ptr
+  * add basic README
+  * Contributors: Séverin Lemaignan, lorenzoferrini
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Sun, 06 Mar 2022 06:00:00 -0000
+
+ros-rolling-hri-rviz (0.1.3-2resolute) resolute; urgency=high
+
+  * update to libhri 0.2.3
+  * Plugin renaming: Faces --> Humans
+  * Contributors: Séverin Lemaignan, lorenzoferrini
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Fri, 21 Jan 2022 06:00:00 -0000
+
+ros-rolling-hri-rviz (0.1.2-2resolute) resolute; urgency=high
+
+  * replace hri_msgs::RegionOfInterestStamped by sensor_msgs::RegionOfInterest
+    Follows changes in hri_msgs 0.2.0
+  * Contributors: Séverin Lemaignan
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Fri, 14 Jan 2022 06:00:00 -0000
+
+ros-rolling-hri-rviz (0.1.1-2resolute) resolute; urgency=high
+
+  * remove code that relies on too-recent rviz APIs, to ensure compat with melodic/noetic
+  * code formatting + PAL copyright
+  * add missing dependencies + fix flags
+  * Contributors: Séverin Lemaignan
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Thu, 13 Jan 2022 06:00:00 -0000
+
+ros-rolling-hri-rviz (0.1.0-2resolute) resolute; urgency=high
+
+  * port the plugin to libhri; use colors generated from ID for bbs
+  * Multi-Skeleton 3D visualization plugin
+  * Faces Plugin as ImageDisplay-like object
+    Faces Plugin displaying multiple faces simultaneously, with
+    random colors for each bounding box available. Currently,
+    we select a random color directly from the RGB color model. In
+    the future, we will select a color from the HSB model, fixing
+    S and B values to get sufficiently bright and vibrant colors.
+  * Contributors: Séverin Lemaignan, Lorenzo Ferrini
+
+ -- Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>  Thu, 13 Jan 2022 06:00:00 -0000
+
+
