@@ -1,0 +1,12 @@
+Source: ros-lyrical-hri-rviz
+Section: misc
+Priority: optional
+Maintainer: Lorenzo Ferrini <lorenzo.ferrini@pal-robotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake-auto, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ament-lint-common <!nocheck>, ros-lyrical-cv-bridge, ros-lyrical-hri, ros-lyrical-hri-msgs, ros-lyrical-rclcpp, ros-lyrical-rcpputils, ros-lyrical-rviz-common, ros-lyrical-rviz-default-plugins, ros-lyrical-rviz-ogre-vendor, ros-lyrical-sensor-msgs, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/hri_rviz/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-hri-rviz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-cv-bridge, ros-lyrical-hri, ros-lyrical-hri-msgs, ros-lyrical-rclcpp, ros-lyrical-rcpputils, ros-lyrical-rviz-common, ros-lyrical-rviz-default-plugins, ros-lyrical-rviz-ogre-vendor, ros-lyrical-sensor-msgs, ros-lyrical-ros-workspace
+Description: Set of rviz plugins for ROS4HRI data visualization
